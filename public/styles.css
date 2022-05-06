@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ion-icon {
+    font-size: 23px;
+}
+
+strong {
+    font-weight: 500;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color:#262626;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #262626;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #C7C7C7;
+}
+
+.topo-mobile {
+    display: none;
+    background-color: #ffffff;
+    height: 54px;
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.barra-inferior {
+    display: none;
+    background-color: #ffffff;
+    width: 100%;
+    height: 54px;
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+}
+
+.topo-desktop {
+    background-color: #ffffff;
+    height: 54px;
+    border: 1px solid #DBDBDB;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topo-desktop > div{
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo-esquerda {
+    display: flex;
+    justify-content: space-between;
+    width: 152px;
+}
+
+.topo-esquerda div {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+
+.topo-meio {
+    background-color: #FAFAFA;
+    width: 215px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+}
+
+.topo-meio h4 {
+    color: #979797;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.topo-direita {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fundo {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    background-color: #fafafa;
+    width: 935px;
+    display: flex;
+    justify-content: center;
+}
+
+.stories-posts {
+    background-color: #fafafa;
+    margin-top: 88px;
+    margin-right: 29px;
+}
+
+.stories {
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 118px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-left: 19px;
+}
+
+.stories ion-icon {
+    font-size: 29px;
+    color: #FFFFFF;
+    position: absolute;
+    border-radius: 50%;
+    top: 42px;
+    right: 6px;
+    z-index: 2;
+    filter: drop-shadow(3px 3px 3px rgba(68, 66, 66, 0.6));
+}
+
+.stories > div {
+    width: 78px;
+    height: 86px;
+    margin: 0 5.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.imagem-stories {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.fundo-stories {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+}
+
+.posts {
+    background-color: #fafafa;
+}
+
+.posts > div {
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 749px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.post-cima {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.post-cima ion-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 19px;
+}
+
+.post-cima img {
+    width: 32px;
+    height: 32px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.imagem-post {
+    width: 612px;
+    height: 612px;
+}
+
+.post-baixo {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-baixo > div {
+    width: 95%;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.icones div {
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.salvar {
+    position: absolute;
+    right: -5px;
+}
+
+.curtidas {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-curtida {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    background-color: #fafafa;
+    width: 293px;
+    margin-top: 111px;
+}
+
+.topo-sidebar {
+    display: flex;
+    align-items: center;
+}
+
+.topo-sidebar img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.sugestoes {
+    margin-top: 24px;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfis > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.perfis > div > div {
+    display: flex;
+}
+
+.perfis img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+
+.rodape {
+    margin-top: 33px;
+}
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 614px) {
+    .stories-posts {
+        margin-top: 54px;
+    }
+
+    .stories {
+        width: 100%;
+        background-color: #fafafa;
+        border: none;
+        margin-bottom: 0px;
+    }
+
+    .stories ion-icon {
+        display: none;
+    }
+
+    .stories-posts {
+        margin-right: 0;
+    }
+
+    .topo-desktop {
+        display: none;
+    }
+
+    .topo-mobile {
+        display: inline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topo-mobile div {
+        width: 94%;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .stories-posts {
+        width: 100%;
+    }
+
+    .posts > div {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagem-post {
+        width: 100%;
+        height: auto;
+    }
+
+    .barra-inferior {
+        display: flex;
+        justify-content: center;
+    }
+
+    .barra-inferior div {
+        width: 95%;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
