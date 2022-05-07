@@ -61,6 +61,10 @@ h2 {
     left: 0;
 }
 
+.topo-mobile ion-icon:first-child {
+    font-size: 25px;
+}
+
 .barra-inferior {
     display: none;
     background-color: #ffffff;
@@ -98,6 +102,10 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 152px;
+}
+
+.topo-esquerda ion-icon {
+    font-size: 25px;
 }
 
 .topo-esquerda div {
@@ -292,6 +300,10 @@ h2 {
     align-items: center;
 }
 
+.topo-sidebar h3 {
+    color: #8E8E8E;
+}
+
 .topo-sidebar img {
     width: 56px;
     height: 56px;
@@ -304,6 +316,10 @@ h2 {
     margin-bottom: 17px;
     display: flex;
     justify-content: space-between;
+}
+
+.sugestoes h6:first-child {
+    color: #8E8E8E;
 }
 
 .perfis > div {
@@ -324,8 +340,20 @@ h2 {
     margin-right: 11px;
 }
 
+.perfis h4 {
+    color: #8E8E8E;
+}
+
+.perfis h6 {
+    color: #139EF2
+}
+
 .rodape {
     margin-top: 33px;
+}
+
+.rodape h2:last-child{
+    margin-top:18px;
 }
 
 @media (max-width: 935px) {
