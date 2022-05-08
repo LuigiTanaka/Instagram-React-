@@ -1,10 +1,10 @@
-function Perfil(props) {
+function criarPerfil(perfil) {
     return (
         <div>
             <div>
-                <img src={props.imagemPerfil} />
+                <img src={perfil.imagemPerfil} />
                 <div>
-                    <h5>{props.nome}</h5>
+                    <h5>{perfil.nome}</h5>
                     <h4>Segue você</h4>
                 </div>
             </div>
@@ -14,13 +14,17 @@ function Perfil(props) {
 }
 
 export default function Perfis() {
+    const perfis = [
+        {imagemPerfil: "images/bartolomeo.jpg", nome: "bartolomeo"},
+        {imagemPerfil: "images/koby.jpg", nome: "koby"},
+        {imagemPerfil: "images/garp.jpg", nome: "garp_"},
+        {imagemPerfil: "images/katakuri.jpg", nome: "katakuri"},
+        {imagemPerfil: "images/marco.jpeg", nome: "fenix_marco"}
+    ];
+
     return (
         <div class="perfis">
-            <Perfil imagemPerfil="images/bartolomeo.jpg" nome="bartolomeo"/>
-            <Perfil imagemPerfil="images/koby.jpg" nome="koby"/>
-            <Perfil imagemPerfil="images/garp.jpg" nome="garp_"/>
-            <Perfil imagemPerfil="images/katakuri.jpg" nome="katakuri"/>
-            <Perfil imagemPerfil="images/marco.jpeg" nome="fenix_marco"/>
+            {perfis.map(criarPerfil)}
         </div>
     );
 }
