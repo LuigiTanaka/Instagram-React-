@@ -7,5 +7,5 @@ export default function Container() {
             <Stories />
             <Posts />
         </div>
-    )
+    );
 }

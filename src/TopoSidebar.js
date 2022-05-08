@@ -1,7 +1,7 @@
 function PerfilUsuario(props) {
     return (
         <div class="topo-sidebar">
-            <img src={props.imagem} />
+            <img src={props.imagem} alt="" />
             <div>
                 <h5>{props.nomeUsuario}</h5>
                 <h3>{props.nome}</h3>

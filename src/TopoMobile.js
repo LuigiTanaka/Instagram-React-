@@ -3,7 +3,7 @@ export default function TopoMobile() {
         <div class="topo-mobile">
             <div>
                 <ion-icon name="logo-instagram"></ion-icon>
-                <img src="images/logo.png" />
+                <img src="images/logo.png" alt="" />
                 <ion-icon name="paper-plane-outline"></ion-icon>
             </div>
         </div>

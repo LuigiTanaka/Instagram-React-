@@ -2,7 +2,7 @@ function criarPerfil(perfil) {
     return (
         <div>
             <div>
-                <img src={perfil.imagemPerfil} />
+                <img src={perfil.imagemPerfil} alt=""/>
                 <div>
                     <h5>{perfil.nome}</h5>
                     <h4>Segue você</h4>
@@ -10,7 +10,7 @@ function criarPerfil(perfil) {
             </div>
             <h6>Seguir</h6>
         </div>
-    )
+    );
 }
 
 export default function Perfis() {

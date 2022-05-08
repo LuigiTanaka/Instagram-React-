@@ -9,5 +9,5 @@ export default function BarraInferior() {
                 <ion-icon name="person-outline"></ion-icon>
             </div>
         </div>
-    )
+    );
 }

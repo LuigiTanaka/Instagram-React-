@@ -1,11 +1,11 @@
 function criarStory(story) {
     return (
         <div>
-            <img src="images/stories_background.jpg" class="fundo-stories" />
-            <img src={story.imagem} class="imagem-stories" />
+            <img src="images/stories_background.jpg" class="fundo-stories" alt="" />
+            <img src={story.imagem} class="imagem-stories" alt="" />
             <h4>{story.nome}</h4>
         </div>
-    )
+    );
 }
 
 export default function Stories() {
@@ -25,5 +25,5 @@ export default function Stories() {
             {stories.map(criarStory)}
             <ion-icon name="chevron-forward-circle"></ion-icon>
         </div>
-    )
+    );
 }

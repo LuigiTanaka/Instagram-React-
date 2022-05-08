@@ -2,18 +2,16 @@ import PostCima from "./PostCima";
 import PostBaixo from "./PostBaixo";
 
 function criarPost(post) {
-
     return (
         <div>
-            <PostCima imagemPerfil={post.imagemPerfil} nome={post.nome}/>
-            <img class="imagem-post" src={post.imagemPost} />
+            <PostCima imagemPerfil={post.imagemPerfil} nome={post.nome} />
+            <img class="imagem-post" src={post.imagemPost} alt="" />
             <PostBaixo imagemCurtida={post.imagemCurtida} nomeCurtida={post.nomeCurtida} textoCurtida={post.textoCurtida}/>
         </div>  
-    )
+    );
 }
 
 export default function Posts() {
-
     const posts = [
         {imagemPerfil: "images/sanji2.jpg", nome: "sanji", imagemPost: "images/carne.jpg", imagemCurtida: "images/luffy2.jpg", nomeCurtida: "você", textoCurtida: "outras 330.000.000 pessoas"},
         {imagemPerfil: "images/zoro.jpg", nome: "zoro_roronoa", imagemPost: "images/espadas.jpg",  imagemCurtida: "images/Mihawk.jpg", nomeCurtida: "dracule_mihawk", textoCurtida: "outras 320.000.000 pessoas"},
@@ -25,5 +23,5 @@ export default function Posts() {
         <div class="posts">
             {posts.map(criarPost)}
         </div>
-    )
+    );
 }
