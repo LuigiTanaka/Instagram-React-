@@ -1,12 +1,15 @@
+import React from "react";
 import PostCima from "./PostCima";
 import PostBaixo from "./PostBaixo";
 
-function criarPost(post) {
+function CriarPost(post) {
+    const [icone, setIcone] = React.useState("heart-outline");
+
     return (
         <div>
             <PostCima imagemPerfil={post.imagemPerfil} nome={post.nome} />
-            <img class="imagem-post" src={post.imagemPost} alt="" />
-            <PostBaixo imagemCurtida={post.imagemCurtida} nomeCurtida={post.nomeCurtida} textoCurtida={post.textoCurtida}/>
+            <img class="imagem-post" src={post.imagemPost} alt="" onClick={() => setIcone("heart")} />
+            <PostBaixo imagemCurtida={post.imagemCurtida} nomeCurtida={post.nomeCurtida} textoCurtida={post.textoCurtida} icone={icone} />
         </div>  
     );
 }
@@ -21,7 +24,7 @@ export default function Posts() {
 
     return (
         <div class="posts">
-            {posts.map(criarPost)}
+            {posts.map(CriarPost)}
         </div>
     );
 }

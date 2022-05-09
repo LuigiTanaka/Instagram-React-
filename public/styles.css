@@ -266,6 +266,16 @@ h2 {
     margin-bottom: 10px;
 }
 
+.not-like {
+    color: #000000;
+    visibility: visible;
+}
+
+.like {
+    color: rgb(214, 52, 52);
+    visibility: visible;
+}
+
 .icones div {
     width: 88px;
     display: flex;
