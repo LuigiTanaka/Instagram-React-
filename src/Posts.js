@@ -3,13 +3,21 @@ import PostCima from "./PostCima";
 import PostBaixo from "./PostBaixo";
 
 function CriarPost(post) {
+    const [like, setLike] = React.useState("not-like");
     const [icone, setIcone] = React.useState("heart-outline");
+
+    function darLike() {
+        if (icone === "heart-outline") {
+            setIcone("heart");
+            setLike("like");
+        }
+    }
 
     return (
         <div>
             <PostCima imagemPerfil={post.imagemPerfil} nome={post.nome} />
-            <img class="imagem-post" src={post.imagemPost} alt="" onClick={() => setIcone("heart")} />
-            <PostBaixo imagemCurtida={post.imagemCurtida} nomeCurtida={post.nomeCurtida} textoCurtida={post.textoCurtida} icone={icone} />
+            <img class="imagem-post" src={post.imagemPost} alt="" onClick={darLike} />
+            <PostBaixo imagemCurtida={post.imagemCurtida} nomeCurtida={post.nomeCurtida} textoCurtida={post.textoCurtida} icone={icone} like={like}/>
         </div>  
     );
 }
